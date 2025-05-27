@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #192038;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.668);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 23px;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1, 1);
+}
+
+.logo span {
+    text-shadow: 0 0 25px #00ffee;
+    color: #00ffee
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.actice {
+    color: #00ffee;
+    border-bottom: 3px solid #00ffee;
+}
+
+.hero-section {
+    text-align: center;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    box-shadow: 0 0 20px #00FFFF, 0 0 40px #00FFFF, 0 0 60px #00FFFF;
+    transition: transform 0.3s, ease-in-out;
+    margin-top: 10rem;
+
+
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+}
+
+.hero-text h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+.hero-text h1 span {
+    color: #00ffee;
+
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #bbbbbb;
+}
+
+.buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #00ffee;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons .btn:hover {
+    background-color: #00ffee;
+    color: #0a0f1f;
+    transform: scale(1.05);
+}
+
+.social-icons {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin-left: 32rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 0 10px;
+    border: 2px solid #00ffee;
+    color: #00FFFF;
+    font-size: 34px;
+    border-radius: 50px;
+}
+
+.social-icons .icons {
+    width: 90px;
+    transition: transform 0.3s;
+    border: 2px solid #00FFFF;
+}
+
+.social-icons .icons:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a:hover {
+    color: #fff;
+    border: 2px solid #3fe3f5;
+}
+
+h2 {
+    color: #e8e8e8;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+}
+
+.service-section {
+    text-align: center;
+    max-width: 1200px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #111b2b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(59, 147, 147, 0.516);
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00FFFF, 0 0 40px #00FFFF, 0 0 60px #00FFFF;
+}
+
+.service-card h3 {
+    color: #00FFFF;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #bbb;
+    font-size: rem;
+    line-height: 1.5;
+}
+
+.about-contact-section {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about {
+    flex: 1;
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #00FFFF;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.about p {
+    color: #bbb;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.contact {
+    flex: 1;
+    text-align: center;
+    margin-left: 10rem;
+}
+
+.contact h2 {
+    margin-left: -12rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 80%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #00FFFF;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    transition: background-color 0.3s border-color 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    background-color: #111b2b;
+    border-color: #00FFFF;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact button {
+    margin-left: 11rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 16rem;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s transform 0.3s;
+}
+
+.contact button:hover {
+    background-color: #00c2c2;
+    transform: scale(1.05);
+}
+
+.footer {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #111b2b;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    color: #bbb;
+    font-size: 1.1rem;
+}
+
+.footer-links {
+    flex: 1;
+}
+
+.footer-links h4 {
+    color: #00FFFF;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transform: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #00FFFF;
+}
+
+footer-social h4 {
+    color: #00FFFF;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-social ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
